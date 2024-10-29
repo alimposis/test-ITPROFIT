@@ -1,0 +1,74 @@
+form{
+  display: flex;
+  flex-direction: column;
+  background-color:cadetblue;
+  width: 750px;
+  border-radius: 20px;
+  margin-top: 50px;
+  align-items: center;
+  min-height: 800px;
+  justify-content: space-between;
+  input{
+    margin: 15px;
+    width: 450px;
+    height: 35px;
+    border:0;
+    border-radius:5px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  textarea{
+    margin: 15px;
+    width: 450px;
+    border:0;
+    border-radius:5px;
+    font-size: 18px;
+  }
+  button{
+    margin: 15px;
+    border:0px;
+    height: 50px;
+    width: 450px;
+    border-radius:10px;
+    cursor: pointer;
+    font-size: 24px;
+
+    font-weight: lighter;
+    background: linear-gradient(80deg,rgb(0, 118, 122) 20%, rgb(86, 86, 255) 55%, rgb(0, 118, 122) 60%);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    transform: translate3d(0, 0, 0);
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.02);
+    }
+  }
+}
+.error{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 360px;
+  background:rgba(255, 0, 0, 0.5);
+}
+.error-input{
+  border:1px red solid;
+}
+.response-state-true{
+  height: 25px;
+  padding: 5px;
+  background-color:rgb(94, 255, 0);
+  color: white;
+}
+.response-state{
+  height: 25px;
+  padding: 5px;
+}
+.response-state-false{
+  height: 25px;
+  padding: 5px;
+  background-color:red;
+  color: white;
+}

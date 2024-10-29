@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.title %></title>
+</head>
+<body>
+  <form id='myForm'>
+    <h2>Форма отправки сообщения</h2>
+    <input placeholder='Имя' type="text" class="input-user-name">
+    <span class="validation-userName"></span>
+    <input id='phone' placeholder='+375(__)___-__-__' type="text" class="input-phone">
+    <span class="validation-phone"></span>
+    <input placeholder='mail'  type="text" class="input-email" >
+    <span class="validation-email"></span>
+    <textarea placeholder='сообщение' class="input-textarea" name="" id="" cols="30" rows="10"></textarea>
+    <span class="validation-textarea"></span>
+    <button type='submit' class="buton-form">Отправить форму</button>
+    <span class="response-state"></span>
+  </form>
+  <button class="open_modal" >Открыть модальное окно</button>
+  <div class="background display-none"></div>
+  <aside class="modal display-none">
+    <img class="modal_close"  src="https://img.icons8.com/?size=100&id=46&format=png&color=000000" alt="">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at vitae doloremque saepe, quo minus repellat corrupti mollitia? Hic, facilis soluta! Nemo cupiditate reiciendis nihil ullam! Perferendis saepe a harum!</p>
+  </aside>
+</body>
+</html>
